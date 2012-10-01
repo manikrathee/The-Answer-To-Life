@@ -1,5 +1,4 @@
-
-#1. ![rainbow_unicorn.gif](rainbow_unicorn.gif)
+#1. ![rainbow_unicorn.gif](gifs/rainbow_unicorn.gif)
 #2. ![wolff4.gif](wolff4.gif)
 #3. ![wolff3.gif](wolff3.gif)
 #4. ![wolff2.gif](wolff2.gif)
