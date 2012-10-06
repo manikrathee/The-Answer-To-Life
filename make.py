@@ -1,5 +1,5 @@
 import glob
-gifs=glob.glob("*.gif")
+gifs=glob.glob("gifs/*.gif")
 htmlFile = open("index.html", "r+").read()
 gifList=""
 
@@ -9,7 +9,7 @@ def insert(index, mainstring, insertstring):
 if '<ul id="gif-library" class="unstyled">' in htmlFile:
 	for index in range(len(gifs)):
 		if '<li>' not in htmlFile:
-			gifList+="<li class='span-1'><img src='"+gifs[index]+"' alt='"+gifs[index]+"' /></li>"
+			gifList+="<li class='span-1'><img src='gifs/"+gifs[index]+"' alt='"+gifs[index]+"' /></li>"
 	
 	body = insert(htmlFile.find('</ul>'), htmlFile, gifList)
 	open("index.html", "r+").write(body)
