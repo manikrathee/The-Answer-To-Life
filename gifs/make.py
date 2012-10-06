@@ -6,10 +6,10 @@ gifList=""
 def insert(index, mainstring, insertstring):
     return mainstring[:index] + insertstring + mainstring[index:]
 
-if '<ul id="gif-library">' in htmlFile:
+if '<ul id="gif-library" class="unstyled">' in htmlFile:
 	for index in range(len(gifs)):
 		if '<li>' not in htmlFile:
-			gifList+="<li>"+gifs[index]+"</li>"
+			gifList+="<li class='span-1'><img src='"+gifs[index]+"' alt='"+gifs[index]+"' /></li>"
 	
 	body = insert(htmlFile.find('</ul>'), htmlFile, gifList)
 	open("index.html", "r+").write(body)
