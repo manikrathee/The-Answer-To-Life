@@ -1,5 +1,5 @@
 import glob
-gifs=glob.glob("*.gif")
+gifs=glob.glob("gifs/*.gif")
 htmlFile = open("index.html", "r+").read()
 gifList=""
 
