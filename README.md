@@ -1,5 +1,5 @@
 #The-Answer-To-Life
-##An shared GIF repo.
+##A shared GIF repo.
 
 Feel free to fork and contribute.
 
